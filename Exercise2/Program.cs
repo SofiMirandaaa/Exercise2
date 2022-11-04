@@ -13,6 +13,11 @@ namespace GPA_sort
         //Deklarasi variabel int untuk menyimpan banyaknya data pada array
         private int i;
 
+        //Fungsi / Method untuk menerima masukan
+        public void read()
+        {
+
+        }
 
 
     }  
