@@ -33,7 +33,7 @@ namespace GPA_sort
             Console.WriteLine("Masukkan Nilai ");
             Console.WriteLine("----------------------------");
 
-            //User memasukkan elemen pada array
+            //User memasukkan data pada array
             for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
@@ -45,7 +45,7 @@ namespace GPA_sort
         }
         public void display()
         {
-            //Menampilkan array yang tersusun
+            //Menampilkan data yang tersusun
             Console.WriteLine("");
             Console.WriteLine("----------------------");
             Console.WriteLine("Urutan Nilai yang telah tersusun ");
@@ -61,13 +61,13 @@ namespace GPA_sort
         {
             for (int i = 1; i < n; i++) //For n - 1 passes
             {
-                //Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
+                //Pada pass i, bandingkan n - i data pertama dengan data selanjutnya
                 for (int SM = 0; SM < n - i; SM++)
                 {
 
-                    if (a[SM] > a[n - 1]) //Jika elemen tidak dalam urutan yang benar
+                    if (a[SM] > a[n - 1]) //Jika data tidak dalam urutan yang benar
                     {
-                        //Tukar elemen
+                        //Tukar data
                         int temp;
                         temp = a[SM];
                         a[SM] = a[n - 1];
@@ -81,13 +81,13 @@ namespace GPA_sort
             //Creating the object of the Data Short class
             Program myList = new Program();
 
-            //Pemanggilan fungsi untuk menerima elemen array
+            //Pemanggilan fungsi untuk menerima data
             myList.read();
 
-            //Pemanggilan fungsi untuk mengurutkan elemen array
+            //Pemanggilan fungsi untuk mengurutkan data nilai
             myList.GPAsort();
 
-            //Pemanggilan fungsi untuk menampilkan elemen array
+            //Pemanggilan fungsi untuk menampilkan data nilai
             myList.display();
 
             //Exit
