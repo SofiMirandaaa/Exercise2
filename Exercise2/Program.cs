@@ -76,13 +76,19 @@ namespace GPA_sort
                 }
             }
         }
+        static void Main(string[] args)
+        {
 
+        }
+
+        
 
 
 
 
 
     }  
+
         
     
 
