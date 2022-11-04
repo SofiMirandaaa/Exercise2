@@ -57,6 +57,28 @@ namespace GPA_sort
             Console.WriteLine("");
         }
 
+        public void GPAsort()
+        {
+            for (int i = 1; i < n; i++) //For n - 1 passes
+            {
+                //Pada pass i, bandingkan n - i elemen pertama dengan elemen selanjutnya
+                for (int SM = 0; SM < n - i; SM++)
+                {
+
+                    if (a[SM] > a[n - 1]) //Jika elemen tidak dalam urutan yang benar
+                    {
+                        //Tukar elemen
+                        int temp;
+                        temp = a[SM];
+                        a[SM] = a[n - 1];
+                        a[n - 1] = temp;
+                    }
+                }
+            }
+        }
+
+
+
 
 
 
