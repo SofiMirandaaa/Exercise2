@@ -28,6 +28,18 @@ namespace GPA_sort
                     Console.WriteLine("\nArray dapat mempunyai maksimal 96 elemen.\n");
 
             }
+            Console.WriteLine("");
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Masukkan Nilai ");
+            Console.WriteLine("----------------------------");
+
+            //User memasukkan elemen pada array
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                a[i] = Int32.Parse(s1);
+            }
         }
 
 
