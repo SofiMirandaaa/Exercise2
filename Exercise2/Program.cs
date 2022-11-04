@@ -16,7 +16,18 @@ namespace GPA_sort
         //Fungsi / Method untuk menerima masukan
         public void read()
         {
+            //Menerima angka untuk menentukan banyaknya data yanag disimpan pada array 
+            while (true)
+            {
+                Console.Write("Masukkan banyaknya jumlah Nilai yang ingin di urutkan: ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 96)
+                    break;
+                else
+                    Console.WriteLine("\nArray dapat mempunyai maksimal 96 elemen.\n");
 
+            }
         }
 
 
