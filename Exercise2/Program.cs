@@ -40,7 +40,24 @@ namespace GPA_sort
                 string s1 = Console.ReadLine();
                 a[i] = Int32.Parse(s1);
             }
+
+
         }
+        public void display()
+        {
+            //Menampilkan array yang tersusun
+            Console.WriteLine("");
+            Console.WriteLine("----------------------");
+            Console.WriteLine("Urutan Nilai yang telah tersusun ");
+            Console.WriteLine("----------------------");
+            for (int SM = 0; SM < n; SM++)
+            {
+                Console.WriteLine(a[SM]);
+            }
+            Console.WriteLine("");
+        }
+
+
 
 
     }  
