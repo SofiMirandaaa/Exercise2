@@ -78,7 +78,21 @@ namespace GPA_sort
         }
         static void Main(string[] args)
         {
+            //Creating the object of the Data Short class
+            Program myList = new Program();
 
+            //Pemanggilan fungsi untuk menerima elemen array
+            myList.read();
+
+            //Pemanggilan fungsi untuk mengurutkan elemen array
+            myList.GPAsort();
+
+            //Pemanggilan fungsi untuk menampilkan elemen array
+            myList.display();
+
+            //Exit
+            Console.WriteLine("\n\nTekan Tombol Apa Saja Untuk Keluar.");
+            Console.Read();
         }
 
         
